@@ -15,13 +15,22 @@ const routes: Array<RouteConfig> = [
         },
     },
     {
-        path: "/about",
-        name: "About",
+        path: "/privacy",
+        name: "Privacy",
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () =>
-            import(/* webpackChunkName: "about" */ "../views/About.vue"),
+            import(/* webpackChunkName: "about" */ "../views/Privacy.vue"),
+    },
+    {
+        path: "/imprint",
+        name: "Imprint",
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import(/* webpackChunkName: "about" */ "../views/Imprint.vue"),
     },
     {
         path: "/home",
